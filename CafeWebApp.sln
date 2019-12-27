@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeWebApp", "CoffeeWebApp\CoffeeWebApp.csproj", "{BF4295D5-C74E-4E51-B47F-9DB9175D284D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeaWebApp", "TeaWebApp\TeaWebApp.csproj", "{DDF8C356-6B00-4A06-894E-685F86F8D482}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF4295D5-C74E-4E51-B47F-9DB9175D284D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF4295D5-C74E-4E51-B47F-9DB9175D284D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF4295D5-C74E-4E51-B47F-9DB9175D284D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF4295D5-C74E-4E51-B47F-9DB9175D284D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDF8C356-6B00-4A06-894E-685F86F8D482}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDF8C356-6B00-4A06-894E-685F86F8D482}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDF8C356-6B00-4A06-894E-685F86F8D482}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDF8C356-6B00-4A06-894E-685F86F8D482}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0CEB7473-265E-453B-B9C6-500F861422C3}
+	EndGlobalSection
+EndGlobal
