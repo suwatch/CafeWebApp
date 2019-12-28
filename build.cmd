@@ -74,8 +74,9 @@ REM 2 options to expose: NodePort or LoadBalancer
 
 REM create cafe-apps namespace
 REM create coffee (2 replicas) and tea (3 replicas) deployments in cafe-apps namespace
-REM create coffee-svc and tea-svc nodeport service in cafe-apps namespace
 REM kubectl apply -f C:\gitroot\CafeWebApp\Apps\cafe.yaml
+REM create coffee-clusterip and tea-clusterip service in cafe-apps namespace
+REM kubectl apply -f C:\gitroot\CafeWebApp\Apps\cafe-clusterip.yaml
 
 REM verify everything is running
 REM kubectl get all -n=cafe-apps -o wide

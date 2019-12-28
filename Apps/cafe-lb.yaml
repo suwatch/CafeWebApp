@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: coffee-lb
+  namespace: cafe-apps
+  labels:
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+  selector:
+    app: coffee
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: tea-ilb
+  namespace: cafe-apps
+  labels:
+  annotations:
+    service.beta.kubernetes.io/azure-load-balancer-internal: "true"
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+  selector:
+    app: tea

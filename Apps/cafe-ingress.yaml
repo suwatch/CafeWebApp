@@ -14,9 +14,9 @@ spec:
       paths:
       - path: /tea
         backend:
-          serviceName: tea-svc
+          serviceName: tea-clusterip
           servicePort: 80
       - path: /coffee
         backend:
-          serviceName: coffee-svc
+          serviceName: coffee-clusterip
           servicePort: 80
