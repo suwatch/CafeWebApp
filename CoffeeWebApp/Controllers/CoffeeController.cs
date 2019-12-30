@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
@@ -32,6 +33,24 @@ namespace CoffeeWebApp.Controllers
             foreach (var header in Request.Headers)
             {
                 strb.AppendLine($"{header.Key}: {header.Value}");
+            }
+            strb.AppendLine();
+
+            strb.AppendLine("--- ifconfig.co ---");
+            try
+            {
+                using (var client = new HttpClient())
+                {
+                    using (var resp = await client.GetAsync("http://ifconfig.co/ip"))
+                    {
+                        resp.EnsureSuccessStatusCode();
+                        strb.AppendFormat("Outbound: {0}", await resp.Content.ReadAsStringAsync());
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                strb.AppendLine($"Exception: {ex}");
             }
             strb.AppendLine();
 

@@ -2,6 +2,7 @@ setlocal
 cd /d C:\gitroot\CafeWebApp
 call dotnet restore
 call dotnet publish -c Debug
+exit /b 0
 
 REM to local registry
 REM call docker build -t suwatch01/coffeewebapp C:\gitroot\CafeWebApp\CoffeeWebApp
